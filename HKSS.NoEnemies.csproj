@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Lib\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Analyzer Include="Lib\BepInExUtils.Generator.dll"/>
+        <Reference Include="0Harmony">
+            <HintPath>Lib\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>Lib\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx">
+            <HintPath>Lib\BepInEx.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Harmony">
+            <HintPath>Lib\BepInEx.Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInExUtils">
+            <HintPath>Lib\BepInExUtils.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInExUtils.Generator">
+            <HintPath>Lib\BepInExUtils.Generator.dll</HintPath>
+        </Reference>
+        <Reference Include="HarmonyXInterop">
+            <HintPath>Lib\HarmonyXInterop.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.RuntimeDetour">
+            <HintPath>Lib\MonoMod.RuntimeDetour.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.Utils">
+            <HintPath>Lib\MonoMod.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="PlayMaker">
+          <HintPath>Lib\PlayMaker.dll</HintPath>
+        </Reference>
+        <Reference Include="TeamCherry.SharedUtils">
+            <HintPath>Lib\TeamCherry.SharedUtils.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>Lib\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>Lib\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+            <HintPath>Lib\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputModule">
+            <HintPath>Lib\UnityEngine.InputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule">
+            <HintPath>Lib\UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+            <HintPath>Lib\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".github\workflows\pre-release.yml" />
+      <Content Include=".github\workflows\release.yml" />
+      <Content Include=".packaging\thunderstore.toml" />
+    </ItemGroup>
+
+</Project>
