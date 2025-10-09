@@ -116,7 +116,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-windows
-          path: bin/Release/net48/AlwaysMist.dll
+          path: bin/Release/net48/HKSS.NoEnemies.dll
   
   upload:
     name: Create Pre Release

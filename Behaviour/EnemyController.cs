@@ -77,8 +77,8 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (Configs.Mode == NoEnemiesMode.Off || !_maybeIsBoss || !HealthManager || HealthManager.hp <= 0 ||
-            HealthManager.isDead) return;
+        if (Configs.Mode is NoEnemiesMode.Off or NoEnemiesMode.KillWhenTryAttack || !_maybeIsBoss || !HealthManager ||
+            HealthManager.hp <= 0 || HealthManager.isDead) return;
         Utils.Logger.Debug($"Boss: {gameObject.name} HP: {HealthManager.hp}");
         FSMUtility.SendEventToGameObject(gameObject, "TOOK TAG DAMAGE");
         FSMUtility.SendEventToGameObject(gameObject, "TOOK DAMAGE");
