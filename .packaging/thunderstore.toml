@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 namespace = "ykysnk"
 name = "No_Enemies"
 versionNumber = "0.0.1" # will be replaced
-description = "Nothing happed in Hollow Knight: Silksong"
+description = "Nothing happened in Hollow Knight: Silksong"
 websiteUrl = "https://github.com/T2PeNBiX99wcoxKv3A4g/Always-Mist"
 containsNsfwContent = false
 [package.dependencies]
