@@ -34,6 +34,18 @@
         <Reference Include="HarmonyXInterop">
             <HintPath>Lib\HarmonyXInterop.dll</HintPath>
         </Reference>
+        <Reference Include="Mono.Cecil">
+            <HintPath>Lib\Mono.Cecil.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Mdb">
+            <HintPath>Lib\Mono.Cecil.Mdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Pdb">
+            <HintPath>Lib\Mono.Cecil.Pdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Rocks">
+            <HintPath>Lib\Mono.Cecil.Rocks.dll</HintPath>
+        </Reference>
         <Reference Include="MonoMod.RuntimeDetour">
             <HintPath>Lib\MonoMod.RuntimeDetour.dll</HintPath>
         </Reference>
@@ -41,13 +53,19 @@
             <HintPath>Lib\MonoMod.Utils.dll</HintPath>
         </Reference>
         <Reference Include="PlayMaker">
-          <HintPath>Lib\PlayMaker.dll</HintPath>
+            <HintPath>Lib\PlayMaker.dll</HintPath>
         </Reference>
         <Reference Include="TeamCherry.SharedUtils">
             <HintPath>Lib\TeamCherry.SharedUtils.dll</HintPath>
         </Reference>
+        <Reference Include="TeamCherry.TK2D">
+            <HintPath>Lib\TeamCherry.TK2D.dll</HintPath>
+        </Reference>
         <Reference Include="UnityEngine">
             <HintPath>Lib\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+            <HintPath>Lib\UnityEngine.AudioModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
             <HintPath>Lib\UnityEngine.CoreModule.dll</HintPath>
@@ -67,9 +85,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include=".github\workflows\pre-release.yml" />
-      <Content Include=".github\workflows\release.yml" />
-      <Content Include=".packaging\thunderstore.toml" />
+        <Content Include=".github\workflows\pre-release.yml"/>
+        <Content Include=".github\workflows\release.yml"/>
+        <Content Include=".packaging\thunderstore.toml"/>
     </ItemGroup>
 
 </Project>

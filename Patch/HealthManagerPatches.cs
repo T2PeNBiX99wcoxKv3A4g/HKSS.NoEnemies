@@ -13,8 +13,8 @@ internal class HealthManagerPatches
     private static void Awake(HealthManager __instance)
     {
         Utils.Logger.Debug($"__instance {__instance} {__instance.gameObject.name}");
-        var component = !__instance.gameObject.TryGetComponent<EnemyController>(out var getController)
-            ? __instance.gameObject.AddComponent<EnemyController>()
+        var component = !__instance.gameObject.TryGetComponent<NoEnemiesController>(out var getController)
+            ? __instance.gameObject.AddComponent<NoEnemiesController>()
             : getController;
         Utils.Logger.Debug($"controller {component}");
         component.HealthManager = __instance;
