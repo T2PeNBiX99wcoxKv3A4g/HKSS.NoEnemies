@@ -5,8 +5,8 @@ namespace HKSS.NoEnemies;
 
 [BepInUtils("io.github.ykysnk.HKSS.NoEnemies", "No Enemies", Version)]
 [BepInProcess(Utils.GameName)]
-[ConfigBind<NoEnemiesMode>("Mode", SectionOptions, NoEnemiesMode.BeGone, "No enemies working modes")]
-[ConfigBind<bool>("RandomCorpseSplat", SectionOptions, false, "Random corpse splat in the maps")]
+[ConfigBind<NoEnemiesMode>("Mode", SectionOptions, NoEnemiesMode.BeGone, "No enemies working modes.")]
+[ConfigBind<bool>("RandomCorpseSplat", SectionOptions, false, "Random corpse splat in the maps.")]
 public partial class Main
 {
     private const string SectionOptions = "Options";
