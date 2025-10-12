@@ -39,4 +39,4 @@ you can change any values in game instead.
 
 * Some enemies may have some problems. Like items will not drop at all.  
   You can try to change the working mode to `KillWhenTryAttack` or `Off` to avoid this issue.  
-  If stuck in the battle scene, try back to the main menu or restart the game.
+* Some time you may stick in the battle scene, try back to the main menu or restart the game.
