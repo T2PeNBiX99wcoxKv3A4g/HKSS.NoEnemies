@@ -4,7 +4,7 @@ using UnityEngine;
 
 // ReSharper disable InconsistentNaming
 
-namespace HKSS.NoEnemies.Patch;
+namespace HKSS.NoEnemies.Patches;
 
 [HarmonyPatch(typeof(HeroBox))]
 internal class HeroBoxPatches

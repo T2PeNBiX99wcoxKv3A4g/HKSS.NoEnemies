@@ -3,7 +3,7 @@ using HKSS.NoEnemies.Behaviour;
 
 // ReSharper disable InconsistentNaming
 
-namespace HKSS.NoEnemies.Patch;
+namespace HKSS.NoEnemies.Patches;
 
 [HarmonyPatch(typeof(HealthManager))]
 internal class HealthManagerPatches
