@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.2..v0.0.3) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Add `BepInDependency` attribute for `BepInExUtils` library - ([e93a00c](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/e93a00cbebff47fee19169ca428d59109e03ab2a))
+- Update multiple library dependencies in `Lib` folder - ([ecae281](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/ecae2816723d0ab44a43f6c60e1cfe39e71dca4a))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([ec456a4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/ec456a4784118298ef49c2407abdf820813e13d6))
+
+
 ## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.1..v0.0.2) - 2025-10-15
 
 ### 🐛 Bug Fixes
