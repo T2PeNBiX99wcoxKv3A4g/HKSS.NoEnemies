@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.1..v0.0.2) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils` library - ([18c0175](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/18c0175fe77b4835fa6d550d65ef56103c1794a3))
+- Update BepInExUtils and BepInExUtils.Generator libraries - ([47a9db2](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/47a9db2fc45b7a05b4a25d2ddde5b7a1e2e9923e))
+- Correct namespace typos in patch files - ([25a041d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/25a041dcb1a2ed2c612632108b16ff5ec9cae48e))
+- Update `README.md` - ([c011ce8](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/c011ce841ccc57e8abf86ed1da607525f9126b7c))
+
+### 🚜 Refactor
+
+- Replace `[UsedImplicitly]` with `[PublicAPI]` and suppress warnings - ([366f4c9](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/366f4c90d9a50b6a7560511de7b3fa5743290691))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([a38ca9e](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/a38ca9eb64e35932dc84fcdafc9ea880986d7358))
+
+## New Contributors ❤️
+
+* @github-actions[bot] made their first contribution
+
 ## [0.0.1] - 2025-10-12
 
 ### 🐛 Bug Fixes

@@ -10,7 +10,7 @@ namespace HKSS.NoEnemies;
 public partial class Main
 {
     private const string SectionOptions = "Options";
-    private const string Version = "0.0.1";
+    private const string Version = "0.0.2";
 
     protected override void PostAwake()
     {
