@@ -33,7 +33,7 @@ public class HealthManagerItemDropGroupProxy : ClassProxy
 
     public List<HealthManagerItemDropProbabilityProxy> Drops
     {
-        get => Native.GetFieldValue<List<object>>("Drops").Select(x => new HealthManagerItemDropProbabilityProxy(x))
+        get => Native.GetFieldValue<List<object>>("Drops")!.Select(x => new HealthManagerItemDropProbabilityProxy(x))
             .ToList();
         set => Native.SetFieldValue("Drops", value.Select(x => x.Native).ToList());
     }

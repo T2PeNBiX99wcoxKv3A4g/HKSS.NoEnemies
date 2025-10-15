@@ -27,7 +27,7 @@ public class HealthManagerItemDropProbabilityProxy : ClassProxy
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public SavedItem item
     {
-        get => Native.GetFieldValue<SavedItem>("item");
+        get => Native.GetFieldValue<SavedItem>("item")!;
         set => Native.SetFieldValue("item", value);
     }
 
@@ -39,7 +39,7 @@ public class HealthManagerItemDropProbabilityProxy : ClassProxy
 
     public CollectableItemPickup CustomPickupPrefab
     {
-        get => Native.GetFieldValue<CollectableItemPickup>("customPickupPrefab");
+        get => Native.GetFieldValue<CollectableItemPickup>("customPickupPrefab")!;
         set => Native.SetFieldValue("customPickupPrefab", value);
     }
 
