@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.3..v0.0.4) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Add null-forgiving operator to field access in proxy classes - ([3356d4d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/3356d4ded1110fb602b3bb6cd71a04f47454f8a3))
+- Update `BepInExUtils` library - ([9633b5e](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/9633b5e5c62e147d5ad271f1d1a75fdd16a2b0a7))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([5725478](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/5725478274ab6fc15f464e671e31ea9598605248))
+
+
 ## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.2..v0.0.3) - 2025-10-15
 
 ### 🐛 Bug Fixes
