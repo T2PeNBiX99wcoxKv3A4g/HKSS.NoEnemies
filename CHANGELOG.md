@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.5](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.4..v0.0.5) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Handle null values in item drops and add debug logging - ([60d7910](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/60d79100ff5ad594b3cc65de5b8147ee5dad83a7))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([cdf527d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/cdf527d5c19580f6d6e29077418d47719278a8c0))
+
+
 ## [0.0.4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.3..v0.0.4) - 2025-10-15
 
 ### 🐛 Bug Fixes
