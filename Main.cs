@@ -4,6 +4,7 @@ using BepInExUtils.Attributes;
 namespace HKSS.NoEnemies;
 
 [BepInUtils("io.github.ykysnk.HKSS.NoEnemies", "No Enemies", Version)]
+[BepInDependency("io.github.ykysnk.BepinExUtils", "0.8.1")]
 [BepInProcess(Utils.GameName)]
 [ConfigBind<NoEnemiesMode>("Mode", SectionOptions, NoEnemiesMode.BeGone, "No enemies working modes.")]
 [ConfigBind<bool>("RandomCorpseSplat", SectionOptions, false, "Random corpse splat in the maps.")]
