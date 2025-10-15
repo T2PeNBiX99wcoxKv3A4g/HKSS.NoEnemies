@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using BepInExUtils.Attributes;
 using GlobalEnums;
@@ -117,6 +118,7 @@ public static partial class HealthManagerExtensions
                 }
 
                 instance.SpawnQueuedItemDrop(queuedItem, spawnPoint);
+                Utils.Logger.Debug($"instance.itemDropGroups: {instance.itemDropGroups} {instance.itemDropGroups.Count}");
                 foreach (var rootByProbability in from itemDropGroup in instance.itemDropGroups
                          where itemDropGroup.Drops.Count > 0 && itemDropGroup.TotalProbability >= 1.0
                          select (ItemDropProbabilityCopy)Probability
@@ -237,10 +239,14 @@ public static partial class HealthManagerExtensions
     extension(HealthManager instance)
     {
         [SuppressMessage("ReSharper", "InconsistentNaming")]
+        [PublicAPI]
         public List<HealthManagerItemDropGroupProxy> itemDropGroups
         {
-            get => instance.GetFieldValue<List<object>>("itemDropGroups")
-                .Select(x => new HealthManagerItemDropGroupProxy(x)).ToList();
+            get
+            {
+                var list = instance.GetFieldValue<IList>("itemDropGroups");
+                return list == null ? [] : list.OfType<object>().Select(x => new HealthManagerItemDropGroupProxy(x)).ToList();
+            }
             set => instance.SetFieldValue("itemDropGroups", value.Select(x => x.Native).ToList());
         }
     }

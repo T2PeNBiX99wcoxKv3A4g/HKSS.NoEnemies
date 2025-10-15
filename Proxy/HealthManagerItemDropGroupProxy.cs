@@ -1,3 +1,4 @@
+using System.Collections;
 using BepInExUtils.Proxy;
 using JetBrains.Annotations;
 
@@ -33,8 +34,13 @@ public class HealthManagerItemDropGroupProxy : ClassProxy
 
     public List<HealthManagerItemDropProbabilityProxy> Drops
     {
-        get => Native.GetFieldValue<List<object>>("Drops")!.Select(x => new HealthManagerItemDropProbabilityProxy(x))
-            .ToList();
+        get
+        {
+            var list = Native.GetFieldValue<IList>("Drops");
+            return list == null
+                ? []
+                : list.OfType<object>().Select(x => new HealthManagerItemDropProbabilityProxy(x)).ToList();
+        }
         set => Native.SetFieldValue("Drops", value.Select(x => x.Native).ToList());
     }
 
