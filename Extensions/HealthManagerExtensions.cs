@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using BepInExUtils.Attributes;
 using GlobalEnums;
 using GlobalSettings;
@@ -42,7 +43,7 @@ namespace HKSS.NoEnemies.Extensions;
 [AccessMethod("SpawnItemDrop", typeof(SavedItem), typeof(int), typeof(CollectableItemPickup), typeof(Transform),
     typeof(int))]
 [AccessMethod("NonFatalHit", typeof(bool))]
-[UsedImplicitly]
+[PublicAPI]
 public static partial class HealthManagerExtensions
 {
     // extension doesn't support inside action method
@@ -235,14 +236,12 @@ public static partial class HealthManagerExtensions
 
     extension(HealthManager instance)
     {
-        // ReSharper disable once InconsistentNaming
-        [UsedImplicitly]
+        [SuppressMessage("ReSharper", "InconsistentNaming")]
         public List<HealthManagerItemDropGroupProxy> itemDropGroups
         {
-            get => (instance.GetFieldValue<List<object>>("itemDropGroups") ?? [])
+            get => instance.GetFieldValue<List<object>>("itemDropGroups")
                 .Select(x => new HealthManagerItemDropGroupProxy(x)).ToList();
-            set => instance.SetFieldValue("itemDropGroups",
-                value.Select(x => x.InternalObject).ToList());
+            set => instance.SetFieldValue("itemDropGroups", value.Select(x => x.Native).ToList());
         }
     }
 }

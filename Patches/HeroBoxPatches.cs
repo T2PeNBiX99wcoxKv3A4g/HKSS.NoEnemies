@@ -2,8 +2,6 @@ using HarmonyLib;
 using HKSS.NoEnemies.Behaviour;
 using UnityEngine;
 
-// ReSharper disable InconsistentNaming
-
 namespace HKSS.NoEnemies.Patches;
 
 [HarmonyPatch(typeof(HeroBox))]

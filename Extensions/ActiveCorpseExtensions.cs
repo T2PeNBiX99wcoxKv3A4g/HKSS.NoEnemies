@@ -6,7 +6,7 @@ namespace HKSS.NoEnemies.Extensions;
 [AccessExtensions]
 [AccessInstance<ActiveCorpse>]
 [AccessField<tk2dSprite>("sprite")]
-[UsedImplicitly]
+[PublicAPI]
 public static partial class ActiveCorpseExtensions
 {
 }

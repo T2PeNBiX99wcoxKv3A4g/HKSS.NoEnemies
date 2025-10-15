@@ -1,10 +1,11 @@
+using System.Diagnostics.CodeAnalysis;
 using BepInExUtils.Proxy;
 using JetBrains.Annotations;
 using TeamCherry.SharedUtils;
 
 namespace HKSS.NoEnemies.Proxy;
 
-[UsedImplicitly]
+[PublicAPI]
 public class HealthManagerItemDropProbabilityProxy : ClassProxy
 {
     private const string ClassName = "HealthManager+ItemDropProbability";
@@ -23,30 +24,28 @@ public class HealthManagerItemDropProbabilityProxy : ClassProxy
     {
     }
 
-    // ReSharper disable once InconsistentNaming
-    public SavedItem? item
+    [SuppressMessage("ReSharper", "InconsistentNaming")]
+    public SavedItem item
     {
-        get => Instance.GetFieldValue<SavedItem>("item");
-        set => Instance.SetFieldValue("item", value);
+        get => Native.GetFieldValue<SavedItem>("item");
+        set => Native.SetFieldValue("item", value);
     }
 
     public MinMaxInt Amount
     {
-        get => Instance.GetFieldValue<MinMaxInt>("amount");
-        set => Instance.SetFieldValue("amount", value);
+        get => Native.GetFieldValue<MinMaxInt>("amount");
+        set => Native.SetFieldValue("amount", value);
     }
 
-    public CollectableItemPickup? CustomPickupPrefab
+    public CollectableItemPickup CustomPickupPrefab
     {
-        get => Instance.GetFieldValue<CollectableItemPickup>("customPickupPrefab");
-        set => Instance.SetFieldValue("customPickupPrefab", value);
+        get => Native.GetFieldValue<CollectableItemPickup>("customPickupPrefab");
+        set => Native.SetFieldValue("customPickupPrefab", value);
     }
 
     public int LimitActiveInScene
     {
-        get => Instance.GetFieldValue<int>("limitActiveInScene");
-        set => Instance.SetFieldValue("limitActiveInScene", value);
+        get => Native.GetFieldValue<int>("limitActiveInScene");
+        set => Native.SetFieldValue("limitActiveInScene", value);
     }
-
-    public object? InternalObject => Instance;
 }

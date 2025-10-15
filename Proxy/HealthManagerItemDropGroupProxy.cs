@@ -6,7 +6,7 @@ namespace HKSS.NoEnemies.Proxy;
 /// <summary>
 ///     <see cref="HealthManager" />.ItemDropGroup
 /// </summary>
-[UsedImplicitly]
+[PublicAPI]
 public class HealthManagerItemDropGroupProxy : ClassProxy
 {
     private const string ClassName = "HealthManager+ItemDropGroup";
@@ -25,23 +25,18 @@ public class HealthManagerItemDropGroupProxy : ClassProxy
     {
     }
 
-    [UsedImplicitly]
     public float TotalProbability
     {
-        get => Instance.GetFieldValue<float>("TotalProbability");
-        set => Instance.SetFieldValue("TotalProbability", value);
+        get => Native.GetFieldValue<float>("TotalProbability");
+        set => Native.SetFieldValue("TotalProbability", value);
     }
 
-    [UsedImplicitly]
     public List<HealthManagerItemDropProbabilityProxy> Drops
     {
-        get => (Instance.GetFieldValue<List<object>>("Drops") ?? [])
-            .Select(x => new HealthManagerItemDropProbabilityProxy(x)).ToList();
-        set => Instance.SetFieldValue("Drops",
-            value.Select(x => x.InternalObject ?? throw new NullReferenceException()).ToList());
+        get => Native.GetFieldValue<List<object>>("Drops").Select(x => new HealthManagerItemDropProbabilityProxy(x))
+            .ToList();
+        set => Native.SetFieldValue("Drops", value.Select(x => x.Native).ToList());
     }
-
-    public object? InternalObject => Instance;
 
     public ItemDropProbabilityCopy[] ToDropsCopyArray() => Drops.Select(x => new ItemDropProbabilityCopy
     {

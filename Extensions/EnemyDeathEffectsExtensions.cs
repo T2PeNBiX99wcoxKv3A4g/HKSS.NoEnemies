@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using BepInExUtils.Attributes;
 using HarmonyLib;
 using UnityEngine;
@@ -18,6 +19,7 @@ namespace HKSS.NoEnemies.Extensions;
 [AccessMethod("EmitEffects", typeof(GameObject))]
 public static partial class EnemyDeathEffectsExtensions
 {
+    [SuppressMessage("ReSharper", "SwitchStatementHandlesSomeKnownEnumValuesWithDefault")]
     public static void ReceiveBeGoneEvent(
         this EnemyDeathEffects effects,
         float? attackDirection,
@@ -39,8 +41,6 @@ public static partial class EnemyDeathEffectsExtensions
         if (corpseFlingMultiplier > 1.350000023841858)
             corpseFlingMultiplier = 1.35f;
         int num;
-        // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
-        // ReSharper disable once SwitchStatementMissingSomeEnumCasesNoDefault
         switch (attackType)
         {
             case AttackTypes.RuinsWater:
