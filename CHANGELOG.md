@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.6](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.5..v0.0.6) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils` and `BepInExUtils.Generator` libraries - ([4ca4cf5](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/4ca4cf57a941e4b40909344cfb6d67c184352168))
+- Update `BepInExUtils` library to v0.9.0 and rename `PostAwake` to `Init` - ([0530052](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/05300522aae82f6694b57c1bc4f4d4443f490f2d))
+- Update `BepInExUtils` and `BepInExUtils.Generator` libraries - ([0a13736](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/0a13736d4e17b1ccef39cd05e768080d24a8c02e))
+- Update `BepInExUtils.Generator` library - ([626dc53](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/626dc5308ef098dd48efc8e0a90eb42d3479c515))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([d17d5cc](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/d17d5ccc70eb333e4da99c59cae545baf45ee780))
+
+
 ## [0.0.5](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.4..v0.0.5) - 2025-10-15
 
 ### 🐛 Bug Fixes
