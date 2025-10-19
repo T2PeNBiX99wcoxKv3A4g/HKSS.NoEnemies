@@ -11,7 +11,7 @@ namespace HKSS.NoEnemies;
 public partial class Main
 {
     private const string SectionOptions = "Options";
-    private const string Version = "0.0.6";
+    private const string Version = "0.0.7";
 
     public void Init()
     {

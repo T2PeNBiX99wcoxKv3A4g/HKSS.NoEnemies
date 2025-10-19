@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.7](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.6..v0.0.7) - 2025-10-19
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils` library to v1.0.0 - ([b7fae85](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/b7fae857ab6d4a56272b9719e65fdc30f3573199))
+- Update `BepInExUtils` and `BepInExUtils.Generator` libraries - ([81d9b8f](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/81d9b8f83d392a883c2b5fd3d9bdf97981531bfd))
+- Update `BepInExUtils.Generator` library - ([b4c50cf](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/b4c50cf58d031721413e3f03c534f24221e04de1))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([d664c59](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/commit/d664c59ed229673680c243f9724c2e93e96026a7))
+
+
 ## [0.0.6](https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies/compare/v0.0.5..v0.0.6) - 2025-10-15
 
 ### 🐛 Bug Fixes

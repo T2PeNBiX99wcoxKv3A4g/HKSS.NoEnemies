@@ -10,7 +10,7 @@ websiteUrl = "https://github.com/T2PeNBiX99wcoxKv3A4g/HKSS.NoEnemies"
 containsNsfwContent = false
 [package.dependencies]
 BepInEx-BepInExPack_Silksong = "5.4.2304"
-ykysnk-BepinExUtils = "0.9.2"
+ykysnk-BepinExUtils = "1.0.0"
 
 [build]
 icon = "./icon.png"
